@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="headerPane" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="850.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.gui.controller.AdminManufacturerController">
+  <children>
+    <AnchorPane fx:id="mainPane" layoutX="-1.0" layoutY="58.0" prefHeight="591.0" prefWidth="850.0" AnchorPane.topAnchor="58.0">
+      <children>
+            <VBox fx:id="leftPane" alignment="TOP_CENTER" prefHeight="591.0" prefWidth="170.0" spacing="25.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Button fx:id="profileButton" mnemonicParsing="false" prefHeight="35.0" prefWidth="100.0" text="Профиль">
+                     <font>
+                        <Font name="Euclid Math One Bold" size="18.0" />
+                     </font>
+                  </Button>
+              <Button fx:id="productButton" mnemonicParsing="false" prefHeight="39.0" prefWidth="110.0" text="Студенты">
+                <font>
+                  <Font name="Euclid Math One Bold" size="18.0" />
+                </font>
+              </Button>
+                  <Button fx:id="manufacturerButton" mnemonicParsing="false" prefHeight="74.0" prefWidth="157.0" text="Оценки за семестр" textAlignment="CENTER" wrapText="true">
+                     <font>
+                        <Font name="Euclid Math One Bold" size="18.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="userButton" mnemonicParsing="false" prefHeight="35.0" prefWidth="143.0" text="Пользователи">
+                     <font>
+                        <Font name="Euclid Math One Bold" size="18.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="themeButton" mnemonicParsing="false" prefHeight="35.0" prefWidth="130.0" text="Смена темы">
+                     <font>
+                        <Font name="Euclid Math One Bold" size="18.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="languageButton" mnemonicParsing="false" prefHeight="35.0" prefWidth="130.0" text="Смена языка">
+                     <font>
+                        <Font name="Euclid Math One Bold" size="18.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="closeButton" mnemonicParsing="false" prefHeight="35.0" prefWidth="130.0" text="Выйти">
+                     <font>
+                        <Font name="Euclid Math One Bold" size="18.0" />
+                     </font>
+                  </Button>
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets top="20.0" />
+               </padding>
+            </VBox>
+            <TableView fx:id="manufacturerTable" layoutX="182.0" layoutY="19.0" prefHeight="337.0" prefWidth="628.0">
+              <columns>
+                <TableColumn fx:id="idColumn" prefWidth="73.60005187988281" text="Номер" />
+                <TableColumn fx:id="nameColumn" prefWidth="102.0" text="Фамилия" />
+                  <TableColumn fx:id="countryColumn" minWidth="0.0" prefWidth="88.0" text="Имя" />
+                  <TableColumn fx:id="emailColumn" prefWidth="98.0" text="Средний балл" />
+                  <TableColumn fx:id="ratingColumn" minWidth="0.0" prefWidth="127.0" text="Стипендия" />
+                  <TableColumn fx:id="course_work" prefWidth="138.0" text="Курсовая работа" />
+              </columns>
+            </TableView>
+            <Button fx:id="addManufButton" layoutX="388.0" layoutY="421.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="246.0" text="Добавить оценки">
+               <font>
+                  <Font name="Euclid Math One Bold" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="deleteManufButton" layoutX="388.0" layoutY="471.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="246.0" text="Удалить оценки">
+               <font>
+                  <Font name="Euclid Math One Bold" size="18.0" />
+               </font>
+            </Button>
+            <TextField fx:id="nameField" layoutX="182.0" layoutY="377.0" prefHeight="26.0" prefWidth="142.0" promptText="Фамилия" />
+            <TextField fx:id="contryField" layoutX="343.0" layoutY="377.0" prefHeight="26.0" prefWidth="90.0" promptText="Математика" />
+            <TextField fx:id="ratingField" layoutX="575.0" layoutY="377.0" prefHeight="26.0" prefWidth="63.0" promptText="Юнити" />
+            <TextField fx:id="emailField" layoutX="461.0" layoutY="377.0" prefHeight="26.0" prefWidth="90.0" promptText="Программирование" />
+            <TextField fx:id="countField" layoutX="657.0" layoutY="377.0" prefHeight="26.0" prefWidth="100.0" promptText="Курсовая работа" />
+            <Button fx:id="createReport" layoutX="388.0" layoutY="525.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="246.0" text="Создать отчет">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+      </children></AnchorPane>
+    <Label fx:id="headLabel" alignment="CENTER" layoutX="14.0" layoutY="14.0" prefHeight="35.0" prefWidth="822.0" text="Производители" textAlignment="CENTER" textFill="WHITE">
+      <font>
+        <Font name="Euclid Fraktur Bold" size="28.0" />
+      </font>
+    </Label>
+  </children>
+</AnchorPane>

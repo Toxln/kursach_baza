@@ -1,0 +1,14 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Create tables" type="DatabaseScript">
+    <script-file value="$PROJECT_DIR$/Server/DBScripts/user.sql" />
+    <script-file value="$PROJECT_DIR$/Server/DBScripts/mark.sql" />
+    <script-file value="$PROJECT_DIR$/Server/DBScripts/student.sql" />
+    <script-file value="$PROJECT_DIR$/Server/DBScripts/scholarship.sql" />
+    <script-file value="$PROJECT_DIR$/Server/DBScripts/coefficient.sql" />
+    <script-file value="$PROJECT_DIR$/Server/DBScripts/review.sql" />
+    <script-file value="$PROJECT_DIR$/Server/DBScripts/FAQ.sql" />
+    <script-mode>FILE</script-mode>
+    <data-source id="2fe8af72-89fc-4b53-90e3-cc89f96a6cf1" />
+    <method v="2" />
+  </configuration>
+</component>

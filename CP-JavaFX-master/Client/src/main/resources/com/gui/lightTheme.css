@@ -1,0 +1,103 @@
+/*
+e9e9e9 - 46211A - dark gray for header and button back
+fafafa - 693D3D - white
+000000 - BA5536 - black for text
+d3d3d3 - A43820 -more dark grey for left menu
+*/
+
+.header{
+    -fx-background-color:"#46211A";
+    -fx-font-family: "Monotype Corsiva";
+}
+
+.main{
+    -fx-background-color:"#fff";
+    -fx-font-family: "Monotype Corsiva";
+}
+
+.main .label{
+    -fx-text-fill: black;
+    -fx-font-family: "Monotype Corsiva";
+    -fx-font-size: 15;
+    -fx-alignment: center-left;
+}
+
+.chart-pie-label-line {
+    -fx-stroke: black;
+    -fx-fill: black;
+    -fx-font-family: "Monotype Corsiva";
+}
+
+.chart-pie-label {
+    -fx-font-size: 2em;
+    -fx-font-family: "Monotype Corsiva";
+}
+
+.left{
+    -fx-background-color: "#A43820";
+    -fx-font-family: "Monotype Corsiva";
+}
+
+.button{
+    -fx-background-color:"#46211A";
+    -fx-background-radius:20;
+    -fx-font-size:15;
+    -fx-text-fill:"#BA5536";
+    -fx-font-family: "Monotype Corsiva";
+
+}
+.label{
+    -fx-text-fill: "#BA5536";
+    -fx-font-family: "Monotype Corsiva";
+    -fx-font-size: 28;
+    -fx-alignment: center;
+}
+
+.text-field{
+    -fx-background-radius: 10;
+    -fx-font-family: "Monotype Corsiva";
+}
+
+.table-view {
+    -fx-background-color: transparent;
+    -fx-font-family: "Monotype Corsiva";
+}
+
+.table-view .column-header-background .filler {
+    -fx-background-color: transparent;
+    -fx-font-family: "Monotype Corsiva";
+}
+
+.table-view .column-header-background{
+    -fx-background-color: "#46211A";
+    -fx-font-family: "Monotype Corsiva";
+}
+
+.table-view .column-header {
+    -fx-background-color: transparent;
+    -fx-border-color: black;
+    -fx-font-family: "Monotype Corsiva";
+}
+
+.table-view .column-header .label{
+    -fx-font-size: 15;
+    -fx-font-family: "Monotype Corsiva";
+}
+
+.table-view .table-cell{
+    -fx-border-color: black;
+    -fx-text-fill: black;
+    -fx-font-size: 15;
+    -fx-font-family: "Monotype Corsiva";
+}
+
+.table-row-cell:selected {
+    -fx-background-color: "#EEE4AE";
+    -fx-font-family: "Monotype Corsiva";
+}
+
+.table-row-cell{
+    -fx-background-color: "#693D3D";
+    -fx-font-family: "Monotype Corsiva";
+}
+

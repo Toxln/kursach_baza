@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="headerPane" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="850.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.gui.controller.AdminFAQController">
+  <children>
+    <AnchorPane fx:id="mainPane" layoutX="-1.0" layoutY="58.0" prefHeight="591.0" prefWidth="850.0" AnchorPane.topAnchor="58.0">
+      <children>
+            <VBox fx:id="leftPane" alignment="TOP_CENTER" prefHeight="591.0" prefWidth="170.0" spacing="25.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Button fx:id="profileButton" mnemonicParsing="false" prefHeight="35.0" prefWidth="100.0" text="Профиль">
+                     <font>
+                        <Font name="Euclid Math One Bold" size="18.0" />
+                     </font>
+                  </Button>
+              <Button fx:id="productButton" mnemonicParsing="false" prefHeight="39.0" prefWidth="109.0" text="Студенты">
+                <font>
+                  <Font name="Euclid Math One Bold" size="18.0" />
+                </font>
+              </Button>
+                  <Button fx:id="manufacturerButton" mnemonicParsing="false" prefHeight="39.0" prefWidth="108.0" text="Стипендия">
+                     <font>
+                        <Font name="Euclid Math One Bold" size="18.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="basketButton" mnemonicParsing="false" prefHeight="70.0" prefWidth="113.0" text="Оценки за семестр" textAlignment="CENTER" wrapText="true">
+                     <font>
+                        <Font name="Euclid Math One Bold" size="18.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="themeButton" mnemonicParsing="false" prefHeight="35.0" prefWidth="130.0" text="Смена темы">
+                     <font>
+                        <Font name="Euclid Math One Bold" size="18.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="languageButton" mnemonicParsing="false" prefHeight="35.0" prefWidth="130.0" text="Смена языка">
+                     <font>
+                        <Font name="Euclid Math One Bold" size="18.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="closeButton" mnemonicParsing="false" prefHeight="35.0" prefWidth="130.0" text="Выйти">
+                     <font>
+                        <Font name="Euclid Math One Bold" size="18.0" />
+                     </font>
+                  </Button>
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets top="20.0" />
+               </padding>
+            </VBox>
+            <TableView fx:id="faqTable" layoutX="186.0" layoutY="30.0" prefHeight="383.0" prefWidth="640.0">
+              <columns>
+                <TableColumn fx:id="questionColumn" prefWidth="268.0" text="Вопрос" />
+                <TableColumn fx:id="answersColumn" minWidth="0.0" prefWidth="371.1999816894531" text="Ответ" />
+              </columns>
+            </TableView>
+            <Button fx:id="backButton" layoutX="695.0" layoutY="435.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="130.0" text="Назад">
+               <font>
+                  <Font name="Euclid Math One Bold" size="18.0" />
+               </font>
+            </Button>
+            <TextField fx:id="faqQuestion" layoutX="186.0" layoutY="493.0" prefHeight="40.0" prefWidth="214.0" promptText="Введите вопрос" />
+            <TextField fx:id="faqAnswer" layoutX="459.0" layoutY="493.0" prefHeight="40.0" prefWidth="204.0" promptText="Введите ответ" />
+            <Button fx:id="addFaq" layoutX="695.0" layoutY="493.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="130.0" text="Добавить">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+      </children></AnchorPane>
+    <Label fx:id="headLabel" alignment="CENTER" layoutX="14.0" layoutY="14.0" prefHeight="35.0" prefWidth="822.0" text="Часто задаваемые вопросы" textAlignment="CENTER" textFill="WHITE">
+      <font>
+        <Font name="Euclid Fraktur Bold" size="28.0" />
+      </font>
+    </Label>
+  </children>
+</AnchorPane>
